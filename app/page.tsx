@@ -118,26 +118,26 @@ export default function Home() {
 
         <div className="bg-primaria w-full px-8 pt-10 pb-[30px]">
           <div className="flex w-full justify-between items-center pb-10">
-            <div className="w-72">
+            <a href="#" className="w-72">
               <Image src={"/logo-salinas-maragogi.svg"} alt="" width={169.3} height={72}/>
-            </div>
+            </a>
 
             <button className="bg-secundaria rounded-xl text-[30px] font-semibold px-12 py-4">VEJA OUTROS PERÍODOS</button>
 
             <div className="flex gap-5">
-              <a href="#">
+              <a href="https://web.facebook.com/salinasmaragogi/?locale=pt_BR&_rdc=1&_rdr#" target="_blank">
                 <Image src={"/facebook.svg"} alt="" width={38} height={38}/>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/salinasmaragogi/" target="_blank">
                 <Image src={"/instagram.svg"} alt="" width={37} height={38}/>
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/salinasmaragogi" target="_blank">
                 <Image src={"/youtube.svg"} alt="" width={53.6} height={38}/>
               </a>
-              <a href="#">
+              <a href="https://open.spotify.com/user/wi074zf7qkrgob3o3mkhiyxq6?si=66448c8c965648f6" target="_blank">
                 <Image src={"/spotify.svg"} alt="" width={38} height={38}/>
               </a>
-              <a href="#">
+              <a href="https://www.tiktok.com/@salinasmaragogi?lang=en" target="_blank">
                 <Image src={"/tiktok.svg"} alt="" width={47.5} height={38}/>
               </a>
               </div>
