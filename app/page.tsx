@@ -30,7 +30,7 @@ export default function Home() {
 
           </div>
 
-          <Image src="/icones2.svg" alt="" width={1465} height={303} className="absolute left-52 top-96"/>
+          <Image src="/icones2.svg" alt="" width={1465} height={303} className="absolute left-52 top-56"/>
         </div>
 
         <div className="relative">
