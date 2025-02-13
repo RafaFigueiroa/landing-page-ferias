@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Header from "./components/ui/header";
-import Footer from "./components/ui/footer";
-import Reserva from "./components/Reserva";
-import Carrossel from "./components/Carrossel";
+import Header from "../components/ui/header";
+import Footer from "../components/ui/footer";
+import Reserva from "../components/Reserva";
+import Carrossel from "../components/Carrossel";
 
 export default function Home() {
   return (
