@@ -1,5 +1,5 @@
 {
-    "maragogi": [
+    "colecao": [
         {
             "id": 1,
             "title": "Slide 1",
@@ -17,26 +17,6 @@
             "title": "Slide 3",
             "body": "Ut enim ad minim veniam, quis nostrud",
             "imageUrl": "/galeria/slide-maragogi3.png"
-        }
-    ],
-    "maceio": [
-        {
-            "id": 1,
-            "title": "Slide 1",
-            "body": "Ut enim ad minim veniam, quis nostrud",
-            "imageUrl": "/galeria/slide-maceio1.png"
-        },
-        {
-            "id": 2,
-            "title": "Slide 2",
-            "body": "Ut enim ad minim veniam, quis nostrud",
-            "imageUrl": "/galeria/slide-maceio2.png"
-        },
-        {
-            "id": 3,
-            "title": "Slide 3",
-            "body": "Ut enim ad minim veniam, quis nostrud",
-            "imageUrl": "/galeria/slide-maceio3.png"
         }
     ]
 }
