@@ -98,7 +98,7 @@ export default function Reserva() {
     <div className='flex flex-col items-center'>
       <h4 className="text-xl sm:text-2xl font-semibold text-secundaria">SELECIONE O PERÍODO DA SUA RESERVA</h4>
       <div className="pt-3 pb-5 w-[300px] sm:w-[620px]">
-        <div className="grid grid-cols-7 gap-y-0 place-content-between sm:gap-y-2">
+        <div className="grid grid-cols-7 gap-2 place-content-between sm:gap-y-2">
           {['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB'].map((dia) => (
             <div key={dia} className="text-center sm:text-lg text-terciaria">
               {dia}

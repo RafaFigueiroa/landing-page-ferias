@@ -25,7 +25,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="absolute top-96 flex items-start justify-between w-[1200px]">
+          <div className="absolute top-72 flex items-start justify-between w-[1200px]">
             <Image src="/reserva/icones-maragogi2.svg" alt="" width={146} height={146}/>
             <Image src="/reserva/icones-maragogi2.svg" alt="" width={146} height={146} className="rotate-180"/>
           </div>
