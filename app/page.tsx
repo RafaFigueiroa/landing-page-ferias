@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex flex-col items-center w-full overflow-hidden">
+        <div className="relative flex flex-col items-center w-full overflow-hidden -bottom-px">
           <div className="flex flex-col justify-center sm:gap-14 mb-[20px] w-full z-10">
             <div className="flex justify-center">
               <h2 className="text-2xl md:text-3xl font-semibold w-[450px] sm:w-[900px] xl:w-[1250px]">MOTIVOS NÃO FALTAM PARA PASSAR AS FÉRIAS DE JULHO POR AQUI!</h2>
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex justify-center bg-[#6FCDFF] -bottom-px max-w-[1900px] w-full -mt-[375px] pt-[375px] sm:-mt-[339px] sm:pt-[339px] xl:mt-0 xl:pt-0 overflow-x-hidden">
+        <div className="relative flex justify-center bg-[#6FCDFF] max-w-[1900px] w-full -mt-[375px] pt-[375px] sm:-mt-[341px] sm:pt-[339px] xl:mt-0 xl:pt-0 overflow-x-hidden">
           <div className="pt-40 flex flex-col gap-14 w-full pb-64 sm:pb-[420px] xl:pb-[350px] 2xl:pb-[430px] z-10">
             <div>
               <h2 className="text-3xl sm:text-4xl font-semibold">CLUBINHO DO SIRI</h2>
