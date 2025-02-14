@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Reserva() {
   const [diasSelecionados, setDiasSelecionados] = useState<number[] | null>(null);
@@ -7,6 +7,7 @@ export default function Reserva() {
   const [adultos, setAdultos] = useState<number>(1);
   const [criancas, setCriancas] = useState<number>(0);
   const [idadesCriancas, setIdadesCriancas] = useState<string[]>([]);
+  const [mostrarAlerta, setMostrarAlerta] = useState(false);
 
   const data = new Date();
   const hoje = data.getDate();
@@ -45,6 +46,22 @@ export default function Reserva() {
     novasIdades[index] = event.target.value;
     setIdadesCriancas(novasIdades);
   };
+
+
+  const handleClickReserva = () => {
+    setMostrarAlerta(true);
+  };
+  
+  useEffect(() => {
+    if (mostrarAlerta) {
+      const timer = setTimeout(() => {
+        setMostrarAlerta(false);
+        setAvancar(false);
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [mostrarAlerta]);
 
   if(avancar) {
     return (
@@ -89,7 +106,13 @@ export default function Reserva() {
             </select>
           ))}
         </div>
-        <button className="bg-primaria rounded-full w-72 h-14 text-xl font-semibold text-white">PESQUISAR</button>
+        <button onClick={handleClickReserva} className="bg-primaria rounded-full w-72 h-14 text-xl font-semibold text-white">PESQUISAR</button>
+
+        {mostrarAlerta && (
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-full bg-green-500 text-white px-4 py-2 rounded-md shadow-lg mt-2">
+            Reserva feita com sucesso!
+          </div>
+        )}
       </div>
     );
   }
