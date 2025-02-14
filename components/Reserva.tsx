@@ -50,11 +50,11 @@ export default function Reserva() {
     return (
       <div>
         <h4 className="text-2xl font-semibold text-secundaria">SELECIONE A QUANTIDADE DE PESSOAS</h4>
-        <div className="px-36 pt-5 pb-7 grid grid-cols-2 gap-2">
+        <div className="px-36 pt-3 pb-5 grid grid-cols-2 gap-2">
           <select
             value={adultos}
             onChange={handleAdultosChange}
-            className="pl-3 py-3 border text-[18px] text-terciaria"
+            className="pl-3 py-3 border text-terciaria"
           >
             {[...Array(10).keys()].map((num) => (
               <option key={num} value={num}>
@@ -65,7 +65,7 @@ export default function Reserva() {
           <select
             value={criancas}
             onChange={handleCriancasChange}
-            className="pl-3 py-3 border text-[18px] text-terciaria"
+            className="pl-3 py-3 border text-terciaria"
           >
             {[...Array(10).keys()].map((num) => (
               <option key={num} value={num}>
@@ -78,9 +78,9 @@ export default function Reserva() {
               key={index}
               value={idade}
               onChange={(event) => handleIdadeChange(index, event)}
-              className="pl-3 py-3 border text-[18px] text-terciaria"
+              className="pl-3 py-3 border text-terciaria"
             >
-              <option selected value="">Idade da criança {index+1}</option>
+              <option value="">Idade da criança {index+1}</option>
               {[...Array(13).keys()].map((num) => (
                 <option key={num} value={num}>
                   {num} anos
@@ -89,15 +89,15 @@ export default function Reserva() {
             </select>
           ))}
         </div>
-        <button className="bg-primaria rounded-full w-96 h-16 text-2xl font-semibold text-white">PESQUISAR</button>
+        <button className="bg-primaria rounded-full w-72 h-14 text-xl font-semibold text-white">PESQUISAR</button>
       </div>
     );
   }
 
   return (
-    <div>
+    <div className='flex flex-col items-center'>
       <h4 className="text-2xl font-semibold text-secundaria">SELECIONE O PERÍODO DA SUA RESERVA</h4>
-      <div className="px-36 pt-5 pb-7">
+      <div className="pt-3 pb-5 w-[620px]">
         <div className="grid grid-cols-7 gap-2">
           {['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB'].map((dia) => (
             <div key={dia} className="text-center text-lg text-terciaria">
@@ -128,7 +128,7 @@ export default function Reserva() {
           )}
         </div>
       </div>
-      <button className="bg-primaria rounded-full w-96 h-16 text-2xl font-semibold text-white" onClick={() => setAvancar(true)}>AVANÇAR</button>
+      <button className="bg-primaria rounded-full w-72 h-14 text-xl font-semibold text-white" onClick={() => setAvancar(true)}>AVANÇAR</button>
     </div>
   );
 };
