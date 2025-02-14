@@ -36,16 +36,35 @@ body {
 }
 
 .interativo:hover .retangulo::before{
-  transform: rotate(-5deg) translateY(-12px) scale(4.9);
+  transform: rotate(-5deg) translateY(-12px) scale(4.1);
   transition: 0.5s;
 }
 
 .interativo:hover .titulo{
-  padding-bottom: 78px;
+  padding-bottom: 55px;
   transition: 0.5s;
 }
 
 .interativo:hover .conteudo{
-  bottom: 0px;
+  bottom: 8px;
   transition: 0.5s;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: #847758 !important; /* Cor das bolinhas */
+  opacity: 0.5 !important;
+  border: none !important;
+}
+
+.carousel-indicators .active {
+  background-color: #F85600 !important; /* Cor da bolinha ativa */
+  opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(100%) saturate(500%) hue-rotate(-10deg) brightness(100%) contrast(100%) !important;
 }
