@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex justify-center bg-[#6FCDFF] max-w-[1900px] w-full -mt-[375px] pt-[375px] sm:-mt-[341px] sm:pt-[339px] xl:mt-0 xl:pt-0 overflow-x-hidden">
+        <div className="relative flex justify-center bg-[#6FCDFF] max-w-[1900px] w-full -mt-[375px] pt-[375px] sm:-mt-[341px] sm:pt-[339px] xl:mt-0 xl:pt-0 overflow-hidden">
           <div className="pt-40 flex flex-col gap-14 w-full pb-64 sm:pb-[420px] xl:pb-[350px] 2xl:pb-[430px] z-10">
             <div>
               <h2 className="text-3xl sm:text-4xl font-semibold">CLUBINHO DO SIRI</h2>
