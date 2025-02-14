@@ -48,9 +48,9 @@ export default function Reserva() {
 
   if(avancar) {
     return (
-      <div>
-        <h4 className="text-2xl font-semibold text-secundaria">SELECIONE A QUANTIDADE DE PESSOAS</h4>
-        <div className="px-36 pt-3 pb-5 grid grid-cols-2 gap-2">
+      <div className='flex flex-col items-center'>
+        <h4 className="text-xl sm:text-2xl font-semibold text-secundaria">SELECIONE A QUANTIDADE DE PESSOAS</h4>
+        <div className="pt-3 pb-5 grid grid-cols-2 gap-2 place-content-between w-[300px] sm:w-[620px]">
           <select
             value={adultos}
             onChange={handleAdultosChange}
@@ -96,11 +96,11 @@ export default function Reserva() {
 
   return (
     <div className='flex flex-col items-center'>
-      <h4 className="text-2xl font-semibold text-secundaria">SELECIONE O PERÍODO DA SUA RESERVA</h4>
-      <div className="pt-3 pb-5 w-[620px]">
-        <div className="grid grid-cols-7 gap-2">
+      <h4 className="text-xl sm:text-2xl font-semibold text-secundaria">SELECIONE O PERÍODO DA SUA RESERVA</h4>
+      <div className="pt-3 pb-5 w-[300px] sm:w-[620px]">
+        <div className="grid grid-cols-7 gap-y-0 place-content-between sm:gap-y-2">
           {['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB'].map((dia) => (
-            <div key={dia} className="text-center text-lg text-terciaria">
+            <div key={dia} className="text-center sm:text-lg text-terciaria">
               {dia}
             </div>
           ))}

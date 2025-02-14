@@ -35,8 +35,15 @@ body {
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
+@media (min-width: 640px) {
+  .interativo:hover .retangulo::before{
+    transform: rotate(-5deg) translateY(-12px) scale(4);
+    transition: 0.5s;
+  }
+}
+
 .interativo:hover .retangulo::before{
-  transform: rotate(-5deg) translateY(-12px) scale(4);
+  transform: rotate(-5deg) translateY(-40px) scale(4);
   transition: 0.5s;
 }
 

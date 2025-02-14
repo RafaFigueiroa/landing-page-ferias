@@ -27,7 +27,7 @@ export default function Galeria() {
   }
 
   return (
-    <div className="pt-36 pb-20 bg-[#F4E3B3]">
+    <div className="pt-20 pb-10 sm:pt-36 sm:pb-20 bg-[#F4E3B3] px-2 z-10">
       <Carousel activeIndex={index} onSelect={handleSelect} className="pb-4 relative">
         {colecao.map((item) => {
           return (
